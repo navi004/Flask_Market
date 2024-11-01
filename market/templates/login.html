@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-signin" style="color:white">
+            {{ form.hidden_tag() }}
+            <img class="mb-4" src="https://imgs.search.brave.com/aQsmvTA9gi6BRveC4YLr7Wd-hyUpK4Gize57cCLKwwQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/LmNvbS9pbWFnZS1j/ZG4vaW1hZ2VzL2t0/czkyOHBkL3Byb2R1/Y3Rpb24vMzk2ZjZm/M2M3ZjUwNmViOTY3/NGMyYTZlMjQ0MjQ5/ZmFlZGE4M2IwMC00/MjR4NDE5LnBuZz93/PTEwODAmcT03MiZm/bT13ZWJw" alt="" height="150" width="150">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Login
+            </h1>
+            <br>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="User Name") }}
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Password") }}
+
+            <br>
+
+            {{ form.submit(class="btn btn-lg btn-primary") }}
+
+            <br>
+            <div class="checkbox mb-3">
+                <h6>Do not have an account? <a class="btn btn-sm btn-secondary" href="{{ url_for('register_page') }}">Register</a></h6>
+            </div>
+
+        </form>
+    </div>
+</body>
+{% endblock %}
