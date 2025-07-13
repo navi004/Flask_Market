@@ -17,7 +17,7 @@ itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_17
 Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1715127149914/work
 MarkupSafe @ file:///D:/bld/markupsafe_1729351305211/work
 packaging==24.1
-setuptools==75.1.0
+setuptools==78.1.1
 SQLAlchemy==2.0.36
 typing_extensions==4.12.2
 Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1729884156362/work
